@@ -1,6 +1,6 @@
 
 OS:=$(shell uname -s)
-STOWS=bash-$(OS) joe git-$(OS)
+STOWS=bash-$(OS) joe git-$(OS) tmux
 .PHONY: $(STOWS) clean all info
 all: $(STOWS)
 
