@@ -1,6 +1,8 @@
 [user]
 	name = Erik Rainey
 	email = erik.rainey@gmail.com
+[color]
+	ui = auto
 [core]
 	excludesfile = /Users/emrainey/.gitignore_global
 [difftool "sourcetree"]
