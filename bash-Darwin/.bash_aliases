@@ -1,6 +1,7 @@
 #!/bin/bash
-
-alias ros='source /opt/ros/jade/setup.bash'
+echo "invoking .bash_aliases at $(date)" >> .bash.log
+alias lsusb='system_profiler SPUSBDataType'
+#alias ros='source /opt/ros/kinetic/setup.bash'
 alias vnc='/Applications/Vine\ Server.app/OSXvnc-server'
 alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
 alias backup='rsync --archive --verbose --recursive --progress --stats --links --update --sparse --crtimes --times --group --xattrs --acls --executability'

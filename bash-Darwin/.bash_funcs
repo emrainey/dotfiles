@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "invoking .bash_funcs at $(date)" >> .bash.log
+
+function optsrc() {
+  if [ -e $1 ]; then
+#    echo Sourcing $1
+    source $1
+  else
+    echo $1 Does not exist.
+  fi
+}
