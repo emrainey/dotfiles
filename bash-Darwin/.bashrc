@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "invoking .bashrc at $(date)" >> ~/.shell.log
+# echo "invoking .bashrc at $(date)" >> ~/.shell.log
 
 export PRE_PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PRE_PATH:~/Scripts:~/bin

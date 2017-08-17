@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "invoking .profile at $(date)" >> ~/.shell.log
+# echo "invoking .profile at $(date)" >> ~/.shell.log
 
 if [ -z "${SSH_CLIENT}" ]; then
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

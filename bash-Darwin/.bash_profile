@@ -1,12 +1,16 @@
 #!/bin/bash
 
-echo "invoking .bash_profile at $(date)" >> ~/.shell.log
+# echo "invoking .bash_profile at $(date)" >> ~/.shell.log
 
 export PRE_PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PRE_PATH:~/Scripts
 export EDITOR=joe
 
-source ~/.bash_funcs
+if [ -f ~/.bash_funcs ]
+then
+    source ~/.bash_funcs
+fi
+
 optsrc ~/.bash_aliases
 optsrc ~/.bash_prompt
 optsrc ~/.bash_work
