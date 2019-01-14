@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "invoking .bash_funcs at $(date)" >> .bash.log
+#echo "invoking .bash_funcs at $(date)" >> .bash.log
 
 function optsrc() {
   if [ -e $1 ]; then
@@ -8,4 +8,9 @@ function optsrc() {
   else
     echo $1 Does not exist.
   fi
+}
+
+function renew() {
+    sudo ipconfig set en0 BOOTP
+    sudo ipconfig set en0 DHCP
 }
