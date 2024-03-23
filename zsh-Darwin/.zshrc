@@ -1,3 +1,5 @@
+echo "invoking .zshrc at $(date)" >> ~/.shell.log
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -75,6 +77,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+setopt histignorespace
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -83,3 +87,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="atom ~/.zshrc"
 alias ohmyzsh="atom ~/.oh-my-zsh"
+export EDITOR=joe
+export PATH=$PATH:~/Scripts:~/bin:~/Library/Python/3.9/bin

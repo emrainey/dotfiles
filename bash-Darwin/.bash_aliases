@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "invoking .bash_aliases at $(date)" >> .bash.log
+echo "invoking .bash_aliases at $(date)" >> ~/.shell.log
 alias lsusb='system_profiler SPUSBDataType'
 #alias ros='source /opt/ros/kinetic/setup.bash'
 alias vnc='/Applications/Vine\ Server.app/OSXvnc-server'

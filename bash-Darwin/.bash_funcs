@@ -1,5 +1,5 @@
 #!/bin/bash
-#echo "invoking .bash_funcs at $(date)" >> .bash.log
+echo "invoking .bash_funcs at $(date)" >> ~/.shell.log
 
 function optsrc() {
   if [ -e $1 ]; then
@@ -13,4 +13,9 @@ function optsrc() {
 function renew() {
     sudo ipconfig set en0 BOOTP
     sudo ipconfig set en0 DHCP
+}
+
+fuction ubuntu-dev() {
+    ARGS=("${@}")
+    docker run -i -t --rm --net=host -v `pwd`:`pwd` -w `pwd` ubuntu-dev:20.04 ${ARGS[@]}
 }
