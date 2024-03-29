@@ -1,7 +1,7 @@
 echo "invoking .zshrc at $(date)" >> ~/.shell.log
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/emrainey/.oh-my-zsh
@@ -87,5 +87,6 @@ setopt histignorespace
 # Example aliases
 alias zshconfig="atom ~/.zshrc"
 alias ohmyzsh="atom ~/.oh-my-zsh"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export EDITOR=joe
 export PATH=$PATH:~/Scripts:~/bin:~/Library/Python/3.9/bin
